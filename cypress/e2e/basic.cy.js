@@ -21,4 +21,15 @@ describe("Cypress Basic", () => {
     //TODO imprimir title no console
     //TODO escrever o log em um campo de text
   });
+
+  it.only("Should find and interact with an element", () => {
+    cy.visit("https://www.uol.com.br/");
+
+    cy.get(".blackBar__listProducts > :nth-child(1) > .hyperlink");
+    cy.get(".blackBar__listProducts > :nth-child(1) > .hyperlink").should(
+      "have.class",
+      "hyperlink"
+    );
+    cy.get(".blackBar__listProducts > :nth-child(1) > .hyperlink").click();
+  });
 });
