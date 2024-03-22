@@ -9,5 +9,5 @@ describe("Grupo de testes...", () => {
     it("Segundo teste específico...", () => {});
   });
 
-  it("Meu teste interno", () => {});
+  it.only("Meu útlimo teste interno", () => {});
 });
