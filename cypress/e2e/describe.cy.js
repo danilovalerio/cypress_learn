@@ -2,7 +2,7 @@ it("Meu teste externo", () => {});
 
 describe("Grupo de testes...", () => {
   describe("Grupo de testes mais específicos...", () => {
-    it("Um teste específico...", () => {});
+    it.skip("Um teste específico...", () => {});
   });
 
   describe("Grupo de testes mais específicos...", () => {
