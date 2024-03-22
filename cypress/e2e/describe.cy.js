@@ -1,4 +1,4 @@
-it("Meu teste externo", () => {});
+it.only("Meu teste externo", () => {});
 
 describe("Grupo de testes...", () => {
   describe("Grupo de testes mais específicos...", () => {
